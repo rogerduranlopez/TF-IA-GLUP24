@@ -45,7 +45,7 @@ pip install pandas numpy scikit-learn jupyter
    * `pred<id_pacient>_60min.csv`
 4. Al final del notebook s’imprimeix la taula de mètriques (RMSE i MAE)
 
-Si es volgues fer la validació del model el que s'hauria de fer es 
+Si es volgues fer la validació del model el que s'hauria d'afegir les dades de test i train tal i com es fa amb la resta de pacients, assignant un numero de pacient de validació i seguint la nomenclatura de forma estricte.'
 
 ---
 

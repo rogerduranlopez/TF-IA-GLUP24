@@ -1,6 +1,6 @@
 # GLUP24 ‑ Predicció de Glucosa (model offline)
 
-Aquest repositori conté el codi, les dades i la documentació necessària per reproduir els resultats del treball final de l'assignatura: **"GLUP24"**. En aquest traball s'han predit els nivells de glucosa a **+30 min** i **+60 min** per a sis pacients mitjançant un model *offline* basat en **Random Forest**.
+Aquest repositori conté el codi, les dades i la documentació necessària per reproduir els resultats del treball final de l'assignatura d'intel·ligència artificial. En aquest traball s'han predit els nivells de glucosa a **+30 min** i **+60 min** per a sis pacients mitjançant un model *offline* basat en **Random Forest** del dataset **GLUP24**.
 
 ---
 
@@ -21,6 +21,7 @@ TF_Roger_Duran
 │   ├── EDA_GLUP24.ipynb        # Exploració i anàlisi prèvia de les dades
 │   └── offline_glucosa.ipynb   # Notebook principal de preprocessament i predicció
 │
+├── resultats/                  # Figures extretes de l'exploració de dades
 └── README.md
 ```
 
@@ -28,7 +29,7 @@ TF_Roger_Duran
 ---
 
 ## Requisits de programari
-Ens hem d'assegurar de tenir intalats les seguents llibreries, per tal que el codi pugui executarse correctament
+Ens hem d'assegurar de tenir intalats les seguents llibreries, per tal que el notebook pugui executarse correctament
 ```
 pip install pandas numpy scikit-learn jupyter
 ```
@@ -42,7 +43,9 @@ pip install pandas numpy scikit-learn jupyter
 3. Es crearan 12 fitxers de predicció a `data/predicted/` (per si es vol mirar els resultats de la predicció linea a linea) amb el format:
    * `pred<id_pacient>_30min.csv`
    * `pred<id_pacient>_60min.csv`
-4. Al final del notebook s’imprimeix la taula de mètriques (RMSE i MAE) i es desa una còpia a `resultats/`.
+4. Al final del notebook s’imprimeix la taula de mètriques (RMSE i MAE)
+
+Si es volgues fer la validació del model el que s'hauria de fer es 
 
 ---
 

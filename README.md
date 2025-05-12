@@ -64,8 +64,8 @@ Cada CSV inclou dues columnes:
 
 | Horitzó | RMSE        | MAE         |
 | ------- | ----------- | ----------- |
-| 30 min  | 22.63 mg/dL | 16.42 mg/dL |
-| 60 min  | 36.05 mg/dL | 27.43 mg/dL |
+| 30 min  | 23 mg/dL    | 16.93 mg/dL |
+| 60 min  | 37.02 mg/dL | 27.02 mg/dL |
 
 
 ---
@@ -75,6 +75,6 @@ Cada CSV inclou dues columnes:
 * **Model offline**: un únic entrenament per pacient, sense actualització en fase de test.
 * **Les features no miren al futur**: les features només contenen informació fins a l’instant *t*; la target es genera amb `shift(-pas)`.
 * **Imputació prudencial**: `forward‑fill` per a variables fisiològiques, però la glucosa queda sense imputar per evitar correlació artificial.
-* **Repetibilitat**: `np.random.seed(42)` i `random_state=42` a l’estimador.
+* **Repetibilitat**: `random_state=42` a l’estimador.
 
 

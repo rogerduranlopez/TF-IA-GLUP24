@@ -19,9 +19,8 @@ TF_Roger_Duran
 │
 ├── notebooks/
 │   ├── EDA_GLUP24.ipynb        # Exploració i anàlisi prèvia de les dades
-│   └── offline_glucosa.ipynb   # Notebook principal de modelatge i predicció
+│   └── offline_glucosa.ipynb   # Notebook principal de preprocessament i predicció
 │
-├── resultats/                  # Taules finals (DOCX/CSV) i gràfics d'anàlisi i d’avaluació
 └── README.md
 ```
 
